@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-display-width, initial-scale=1.0">
+    <title>Example Company Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(0, 0, 0);
+        }
+        p {
+            color: rgb(144, 187, 144);
+            font-size: 18px;
+        }
+        /*Navigation controls*/
+        header nav {
+            top: 0;
+            left: 0;
+            position: fixed;
+            display: flex;
+            background-color: rgba(92, 189, 92, 0.952);
+            align-items: center;
+            height: 5vh;
+            width: 100%;
+            box-shadow: 0 2px 4px darkgreen;
+            z-index: 1000;
+        }
+        header nav img {
+            height: 3.5vh;
+            border-radius: 25rem;
+            margin-left: 0.5vw;
+            justify-content: left;
+            z-index: 2;
+        }
+        .nav-logo a {
+            /*This makes the anchor tag fit the image properly*/
+            display: flex;
+        }
+        .nav-links {
+            position: absolute;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center; 
+            gap: 4vw;
+            z-index: 1;        
+        }
+        .nav-links a {
+            font-size: 2vh;
+            font-weight: bolder;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(18, 54, 38);
+            text-decoration: none;  
+            transition: color 0.2s;        
+        }
+        .nav-links a:hover {
+            color: rgb(95, 141, 120);
+            text-decoration: underline;          
+        }
+        .nav-links a:active {
+            transform: translateX(0.1vw);         
+        }
+
+        /*Main controls*/
+        main {
+            padding-top: 7vh;
+            margin-left: 1vw;
+            min-height: 96.83vh;
+        }
+        main h1 {
+            display: inline-block;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 35px;
+            color: rgb(27, 100, 72);
+            padding-bottom: 0.1vh;
+            border-bottom: 0.2vh solid rgb(27, 100, 72);
+        }
+        main h2 {
+            padding-top: 0.5vh;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: italic;
+            color: rgb(41, 139, 102)
+        }
+        main hr {
+            margin-left: -1vw;
+            /*Set both for different browsers*/
+            border-color:rgb(3, 3, 3);
+            background-color:rgb(3, 3, 3);
+        }
+        main p {
+            max-width: 55vw;
+        }
+
+        aside {
+            color: rgb(144, 187, 144);
+            font-size: 18px;
+        }
+
+        /*Footer controls*/
+        footer {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            left: 0;
+            bottom: 0;
+            background-color: yellow;
+            width: 100%;
+            height: 3.2vh;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.3vh;
+        }
+        footer nav {
+            flex: 0 0 100%;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <!--Header section-->
+
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <a href=#home><img src="Images/logo.png" alt="company logo"></a>
+            </div>
+            <div class="nav-links">
+                <a href="#Home">Home</a>
+                <a href="#About">About</a>
+                <a href="#ContactUs">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <!--Main section-->
+
+    <main>
+        <h1>
+            Nuclear Disaster Relief Incorporated
+        </h1>
+        <h2>
+            We're here to demand justice for the victims of nuclear fallout.
+        </h2>
+
+        <br><br><hr><br>
+
+        <article id="About">
+            <h2>
+                &bull;Who are we?
+            </h2>
+            <p>
+                We represent a team of concerned individuals seeking to secure compensation for those who have had their lives destroyed by the impact of poorly managed nuclear energy.
+            </p>
+            <br>
+            <h2>
+                &bull;What do we do?
+            </h2>
+            <p>
+                For the last 15 years, we have been diligent in travelling into disaster zones and gathering evidence to allow us to file lawsuits against the companies resposible for such reprehensible tragedies as the Chernobyl and Fukushima devestations.
+            </p>
+            <br>
+        </article>
+
+        <br><br><hr><br>
+
+        <aside id="ContactUs">
+            You can visit us here: <address>245 Nuclear Fallout Way, Crisis City, NF19 2NF</address>
+        </aside>
+
+    </main>
+
+    <!--Footer section-->
+    <footer>
+        &copy; <abbr>NDRI</abbr>&nbsp;2025
+        <nav class="footer-icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
